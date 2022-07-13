@@ -177,3 +177,15 @@ input::placeholder {
     background-color: #FD9519;
     font-size: 15px;
 }
+
+.show {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.show.active {
+    transform: translateY(0);
+    opacity: 1;
+}
