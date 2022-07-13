@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.orange {
+    color: #FD9519;
+}
+
+.blue {
+    color: #2A0ACD;
+}
+
+.bg-orange {
+    background-color: #FD9519;
+}
+
+.search {
+    background-color: #f9f9f9;
+}
+
+.search input {
+    width: 50%;
+}
+
+.search button {
+    right: 8.5%;
+    padding: 5px 0;
+}
+
+.search-icon {
+    left: 2%;
+    width: 15px;
+}
+
+footer,
+.copyright {
+    background-color: #2A0ACD !important;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+input {
+    outline: none;
+}
+
+.copyright {
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
