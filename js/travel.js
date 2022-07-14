@@ -16,7 +16,7 @@ questions.forEach(function(question){
 window.addEventListener('scroll', show);
 
 function show(){
-    let shows = document.querySelectorAll('.show');
+    let shows = document.querySelectorAll('.showw');
 
     for(let i = 0; i < shows.length; i++){
 

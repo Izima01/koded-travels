@@ -12,7 +12,7 @@
 </head>
 <body>
    <!-- Header Section -->
-    <header class="navbar navbar-expand-lg bg-light py-2 px-5 fixed-top">
+    <header class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
     <div class="container-fluid px-5">
         <a class="navbar-brand fw-bold blue fs-3" href="#">Travel<span class="orange">Guide</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -61,21 +61,30 @@
         </div>
     </section>
 
-    <section class="book row w-100 py-5 p-5 show">
-
-            <div class="col-lg-6 card" style="width: 25rem;">
+    <section id="book mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-3 card">
                 <img src="img/guide person.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h6 class="fw-bold">Richard Potter <span style="margin-left: 40%;">$15/hour</span></h6>
-                    <div class="stars d-flex">
+                    <div class="name d-flex justify-content-between">
+                        <div>
+                            <h6 class="fw-bold">Richard Potter</h6>
+                        </div>
+                        <div>
+                            <span class="fw-bold">$15/hour</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stars d-flex justify-content-between">
                         <div class="star">
                             <img src="img/guide stars.png" alt="">
                         </div>
-                        <div class="rate ps-2">
+                        <div class="rate">
                             <p><span style="font-weight: bold;">4.9</span>(65 Reviews)</p>
                         </div>
                     </div>
-                    <div class="locc d-flex align-item-center">
+                    <div class="loccc d-flex align-item-center">
                         <div class="loc"><img src="img/guide-Vector.png" alt="" class="mt-2"></div>
                         <div class="place pt-2 ps-2"><p>Lives in France</p></div>
                     </div>
@@ -91,33 +100,30 @@
                     </div>
                     <!-- <img src="img/guide stars.png" alt="" style="width: 25%;" <h6 class="p-1 fw-bold">4.9 (65 Reviews)</h6>  -->
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
-                            <h3>Book Your Guide</h3>
-                            <p>$15/hour</p>
-                            <input type="date" name="" id="" class="mb-3">
-                            <input type="time" name="" id="" class="mb-3">
-                            <input type="text" name="" id="" placeholder="Fluent in English and French">
-                        </div>
-                        <div class="col-lg-11">
-                            <div class="d-grid gap-2 mt-3" style="margin-left: 10%;">
-                                <a class="bg-orange px-4 text-white py-2 text-decoration-none rounded-3 text-center" type="submit">Book Now</a>
+                <div class="col-lg-6 col-md-12 book">
+                    <div class="text-center">
+                        <h3>Book Your Guide</h3>
+                        <p>$15/hour</p>
+                        <input type="date" name="" id="" class="mb-3">
+                        <input type="time" name="" id="" class="mb-3">
+                        <input type="text" name="" id="" placeholder="Fluent in English and French">
+                        <div class="d-grid mt-3">
+                            <a class="bg-orange px-4 text-white py-2 text-decoration-none rounded-3 text-center" type="submit">Book Now</a>
 
-                              <!-- <button class="bg-orange text-white text-decoration-none" type="submit">Book Now</button> -->
-                            </div>
-                          </div>
+                            <!-- <button class="bg-orange text-white text-decoration-none" type="submit">Book Now</button> -->
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+            
 
     </section>
-    <section id="about" class="show">
+    <section id="about" class="showw mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-12 col-sm-6">
                     <div class="question-answer">
                         <div class="question d-flex justify-content-between pb-3">
                             <h5 class="title">About Richard Potter</h5>
@@ -214,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 reviews ms-5">
+                <div class="col-lg-4 col-md-12 col-sm-3 reviews">
                     <div class="text text-center">
                         <h6>Clients reviews about Richard Potter  </h6>
                     </div>
@@ -232,7 +238,7 @@
                                 <img src="img/guide stars.png" alt="">
                             </div>
                         </div>
-                        <div class="comment w-100">
+                        <div class="comment">
                             <p>I booked richard potter as my travel guide 2 weeksand he really wowed me, he is so good at what he does, in fact in my next vacation i'm still going to choose him.</p>
                         </div>
                     </div>
@@ -250,7 +256,7 @@
                                 <img src="img/guide stars.png" alt="">
                             </div>
                         </div>
-                        <div class="comment w-100">
+                        <div class="comment">
                             <p>I booked richard potter as my travel guide 2 weeksand he really wowed me, he is so good at what he does, in fact in my next vacation i'm still going to choose him.</p>
                         </div>
                     </div>
@@ -268,7 +274,7 @@
                                 <img src="img/guide stars.png" alt="">
                             </div>
                         </div>
-                        <div class="comment w-100">
+                        <div class="comment">
                             <p>I booked richard potter as my travel guide 2 weeksand he really wowed me, he is so good at what he does, in fact in my next vacation i'm still going to choose him.</p>
                         </div>
                     </div>
@@ -279,7 +285,7 @@
             </div>
         </div>
     </section>
-    <section id="guides" class="show">
+    <section id="guides" class="showw">
         <div class="container">
             <div class="guides">
                 <div class="text mb-5">

@@ -2,6 +2,7 @@
 
 body {
     font-family: inter;
+    overflow-x: hidden;
 }
 
 * {
@@ -178,14 +179,69 @@ input::placeholder {
     font-size: 15px;
 }
 
-.show {
+.showw {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
 }
 
-.show.active {
+.showw.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .reviews {
+        height: 100vh;
+        padding: 7px;
+        border: none;
+        margin-top: 10px;
+    }
+
+    .locc {
+        flex-direction: column;
+    }
+
+    .locc .button {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .book {
+        margin-top: 30px;
+    }
+    
+    .review .rating img {
+        width: 50%;
+    }
+
+}
+@media (max-width: 600px) {
+    .reviews {
+        height: 150vh;
+        padding: 7px;
+        border: none;
+        margin-top: 10px;
+    }
+
+    .locc {
+        flex-direction: column;
+    }
+
+    .locc .button {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .book {
+        margin-top: 30px;
+    }
+    
+    .review .rating img {
+        width: 50%;
+    }
+
 }
