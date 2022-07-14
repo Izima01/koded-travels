@@ -36,7 +36,7 @@ body {
 /* Hero */
 
 .hero-page {
-    background: url("../img/faq-bg.jpeg");
+    background: url("../img/faq-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
