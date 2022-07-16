@@ -43,11 +43,17 @@
     padding-left: 57px;
    
 }
+
+.form-section {
+    margin-left: 40px;
+    padding: 40px;
+}
+
 .color1{
     background-color: rgb(218, 211, 211);
 }
 .sign{
-    color: blue; !important
+    color: blue!important;
 }
 .form-check3{
      padding-right: 200px;
@@ -158,3 +164,52 @@
     left:3%;
 
 }
+
+@media (max-width: 900px) {
+    .image-holder {
+        display: none;
+    }
+
+    .form-section{
+        width: 100%;
+        padding: 17px;
+        margin: 0px;
+        
+    }
+
+    input[type="email"], input[type="password"], input[type="name"] {
+        width: 120%!important;
+    }
+
+    .form-check3 {
+        padding-right: 40px;
+    }
+
+
+    .validEmail{
+        top:35%;
+        right:-15%;
+    }
+
+    .show,.hide{
+        top: 55%;
+        right:-15%;
+        cursor: pointer;
+    }
+
+    .alternate {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 426px) {
+    .w-33 {
+        width: 100px;
+        margin-left: 5px;
+    }
+}
+
+
