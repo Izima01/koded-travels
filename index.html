@@ -30,17 +30,83 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark px-4" href="#">Services</a>
                     </li>
+                    <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li> -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark px-4">Blog</a>
+                        <a class="nav-link text-dark px-4" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark px-4">About Us</a>
+                        <a class="nav-link text-dark px-4" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark px-4">Contact Us</a>
+                        <a class="nav-link text-dark px-4" href="#">Contact Us</a>
                     </li>
                 </ul>
-                <a class="bg-orange px-4 text-white py-2 text-decoration-none rounded-3" type="submit">Create Account</a>
+                <!-- <button class="bg-orange p-2 ms-3 rounded-3 border-0"><img src="./img/landing-bell.png"></button> -->
+                <div style="display: inline-grid;" class="pe-2">
+                    <a class="bg-orange px-4 text-white py-2 text-decoration-none rounded-3" href="#">My Account</a>
+                </div>
+                <div style="display: inline-grid;" class="actions d-none">
+                    <div class="bell">
+                        <a class=" bg-orange rounded-3 p-2" href="#">
+                            <img src="img/landing-bell.png" alt="" class="">
+                        </a>
+                    </div>
+                    <div class="noti">
+                        <h4 class="pt-3 ps-2">Notification</h4>
+                        <div class="all d-flex ps-2">
+                            <div><a href="#">All</a></div>
+                            <div class="ps-5"><a href="#">Unread</a></div>
+                        </div>
+                        <div class="new d-flex justify-content-between pt-2">
+                            <div class="ps-2">
+                                <p>New</p>
+                            </div>
+                            <div class="pe-2 see"> <a href="#">See all</a></div>
+                        </div>
+                        <div class="book">
+                            <div class="ook">
+                                <div>
+                                    <img src="img/noti-1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold pp">You just booked Kenzi as your tour guide in Paris <br> 1h ago
+                                        <span class="fw-bold">.</span> Travel Guide</p>
+                                </div>
+                            </div>
+                            <div class="ook">
+                                <div>
+                                    <img src="img/noti-1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold pp">You just booked Kenzi as your tour guide in Paris <br> 1h ago
+                                        <span class="fw-bold">.</span> Travel Guide</p>
+                                </div>
+                            </div>
+                            <div class="ook">
+                                <div>
+                                    <img src="img/noti-1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold pp">You just booked Kenzi as your tour guide in Paris <br> 1h ago
+                                        <span class="fw-bold">.</span> Travel Guide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -90,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="py-2">
+    <section id="inspo" class="py-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 d-flex align-items-center my-lg-0 my-md-3 my-4">
@@ -290,7 +356,7 @@
             <h2 class="text-center fw-bold fs-2 mt-5">Top Travel Guides</h2>
             <p class="text-center text-dark">Meet our top guides from all around the world</p>
             <div class="guides mb-4">
-                <div class="row d-lg-flex d-md-none d-none">
+                <div class="row d-lg-flex d-none">
                     <div class="col-lg-4 px-3">
                         <div class="card rounded-5">
                             <img src="./img/index-richard.png" class="img-fluid rounded-3">
@@ -520,7 +586,7 @@
         <div class="container">
             <h2 class="text-center fw-bold fs-2 mt-5">Most Popular Places</h2>
             <p class="text-center text-dark mb-4">Discover places and what they are known for</p>
-            <div class="row my-3 d-lg-flex d-md-none d-none">
+            <div class="row my-3 d-lg-flex d-none">
                 <div class="col-lg-4 px-2">
                     <div class="card">
                         <img src="./img/index-eiffel.png" class="img-fluid">
@@ -624,7 +690,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-3 d-lg-flex d-md-none d-none">
+            <div class="row mt-3 d-lg-flex d-none">
                 <div class="col-lg-4 px-2">
                     <div class="card">
                         <img src="./img/index-nyc.png" class="img-fluid">
@@ -1147,7 +1213,9 @@
             <a href="#" class="text-decoration-none text-white">Privacy Policy</a>
         </div>
     </footer>
-    <script src="js/bootstrap.js"></script>
+    
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
