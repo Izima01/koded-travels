@@ -118,6 +118,7 @@ section {
 .hero-page {
     background: url("../img/faq-bg.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     object-fit: cover;
     min-height: 100vh;
@@ -321,10 +322,7 @@ input {
 
     .hero-page p {
         font-size: 18px;
-    }
-
-    .hero-page {
-        min-height: 50vh;
+        text-align: center;
     }
 
     .sm-company {
