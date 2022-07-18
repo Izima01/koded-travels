@@ -1,3 +1,9 @@
+const noti = document.querySelector(".actions")
+
+noti.addEventListener("click", function(){
+    noti.classList.toggle("vieww")
+})
+
 const questions = document.querySelectorAll(".question-answer");
 
 questions.forEach(function(question){

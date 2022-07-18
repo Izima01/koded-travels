@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/c491194143.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/faq-after.css">
     <title>FAQ</title>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light py-2">
+    <!-- header section -->
+
+    <header class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
         <div class="container-fluid px-5">
             <a class="navbar-brand fw-bold blue fs-3" href="#">Travel<span class="orange">Guide</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -42,41 +43,89 @@
                             </ul>
                         </li> -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark px-4">Blog</a>
+                        <a class="nav-link text-dark px-4" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark px-4">About Us</a>
+                        <a class="nav-link text-dark px-4" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark px-4">Contact Us</a>
+                        <a class="nav-link text-dark px-4" href="#">Contact Us</a>
                     </li>
                 </ul>
-                <a class="bg-orange px-4 text-white py-2 text-decoration-none rounded-3" type="submit">My Account</a>
-                <button class="bg-orange p-2 ms-3 rounded-3 border-0"><img src="./img/index-bell.png"></button>
+                <!-- <button class="bg-orange p-2 ms-3 rounded-3 border-0"><img src="./img/landing-bell.png"></button> -->
+                <div style="display: inline-grid;" class="pe-2">
+                    <a class="bg-orange px-4 text-white py-2 text-decoration-none rounded-3" href="#">My Account</a>
+                </div>
+                <div style="display: inline-grid;" class="actions">
+                    <div class="bell">
+                        <a class=" bg-orange rounded-3 p-2" href="#">
+                            <img src="img/landing-bell.png" alt="" class="">
+                        </a>
+                    </div>
+                    <div class="noti">
+                        <h4 class="pt-3 ps-2">Notification</h4>
+                        <div class="all d-flex ps-2">
+                            <div ><a href="#">All</a></div>
+                            <div class="ps-5"><a href="#">Unread</a></div>
+                        </div>
+                        <div class="new d-flex justify-content-between pt-2">
+                            <div class="ps-2"><p>New</p></div>
+                            <div class="pe-2 see"> <a href="#">See all</a></div>
+                        </div>
+                        <div class="book">
+                            <div class="ook">
+                                <div>
+                                    <img src="img/noti-1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold pp">You just booked  Kenzi as your tour guide in Paris <br> 1h ago <span class="fw-bold">.</span> Travel Guide</p>
+                                </div>
+                            </div>
+                            <div class="ook">
+                                <div>
+                                    <img src="img/noti-1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold pp">You just booked  Kenzi as your tour guide in Paris <br> 1h ago <span class="fw-bold">.</span> Travel Guide</p>
+                                </div>
+                            </div>
+                            <div class="ook">
+                                <div>
+                                    <img src="img/noti-1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-bold pp">You just booked  Kenzi as your tour guide in Paris <br> 1h ago <span class="fw-bold">.</span> Travel Guide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <!--Hero Page-->
+     
     <section class="hero-page d-flex flex-column justify-content-center align-items-center text-white">  
         <h1 class="pb-4">Ask us anything</h1>
         <p>Have any questions? We're here to assist you.</p>
     </section>
 
-     <!-- Search Section -->
-     <section class="search w-100">
-        <div class="container py-4 d-flex">
-            <div class="position-relative d-flex align-items-center w-75">
-                <input type="text" class="py-1 rounded-pill border-1 ps-5" placeholder="Search locations">
-                <button class="bg-orange text-white rounded-pill border-0 px-4 position-relative ">Search</button>
+    <!-- search section -->
+
+    <section class="search w-100">
+        <div class="container search-body py-4 d-flex align-items-center">
+            <div class="position-relative search-box w-50">
+                <input type="text" class="py-1 rounded-pill border-1 ps-5 w-75" placeholder="Search locations">
+                <button class="bg-orange text-white rounded-pill border-0 px-4 position-absolute">Search</button>
                 <img src="./img/index-search-icon.png" class="position-absolute search-icon" alt="">
             </div>
             <div class="stats w-50 row">
-                <div class="col-lg-6 text-start">
+                <div class="col-6  text-start">
                     <h4>10000+</h4>
                     <p class="m-0">Users Worldwide</p>
                 </div>
-                <div class="col-lg-6 text-start">
+                <div class="col-6 text-start">
                     <h4>100+</h4>
                     <p class="m-0">Local Guides</p>
                 </div>
@@ -85,6 +134,7 @@
     </section>
 
     <!--Faq-->
+
     <section class="faq py-5 showw">
         <h2 class="text-center pb-4 fw-bold">You could start with these</h2>
         <div class="accordion container">
@@ -94,10 +144,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3 lh-base fw-semibold">I can't see my country's flag.
@@ -113,10 +163,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3 lh-base">Where can I find information on 
@@ -132,10 +182,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3">As a tour guide, is it free for me to
@@ -153,10 +203,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3">Where should press and media
@@ -172,10 +222,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3">Are the tour guides referenced on
@@ -191,10 +241,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3">How can my organisation learn
@@ -212,10 +262,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3">Do I need to have a visa before 
@@ -231,10 +281,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3">What are the services you offer?</h5>
@@ -249,10 +299,10 @@
                         <div class="question d-flex">
                             <button class="control border-0 bg-transparent">
                                 <span class="down-arrow">
-                                    <i class="fa-solid fa-arrow-down icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-down-circle icons fs-4"></i>
                                 </span>
                                 <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right icons rounded-circle border border-warning p-1"></i>
+                                    <i class="bi bi-arrow-right-circle icons fs-4"></i>
                                 </span>
                             </button>
                             <h5 class="title pt-2 ps-3">In the event of disputes between
@@ -268,6 +318,7 @@
     </section>
 
     <!--Category-->
+
     <section class="category pt-5 showw">
         <div class="container pb-4">
             <h2 class="text-center pb-4 fw-bold">Still got questions? Pick a category.</h2>
@@ -339,6 +390,7 @@
     </section>
 
     <!--Contact-->
+
     <section class="contact container py-5 showw">
         <h2 class="text-center pb-4 fw-bold">We'll love to hear from you.</h2>
         <div class="row">
@@ -360,7 +412,7 @@
             </div>
                 <div class="mb-3 position-relative">
                     <textarea class="form-control ch-textarea" id="message" rows="4" placeholder="Enter your message"></textarea>
-                    <div class=" position-absolute sm-md-icon" style="top: 70px; left:580px;">
+                    <div class=" position-absolute sm-md-icon icon-send">
                         <button class="bg-transparent border-0"><i class="fa-solid fa-paperclip me-3 icons btn-h"></i></button>
                         <button class="bg-transparent border-0"><i class="bi bi-send icons btn-h"></i></button>
                     </div>
@@ -369,7 +421,8 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- footer section -->
+
     <footer class="pt-5">
         <div class="container border-top border-1 border-white border-bottom text-white mb-5">
             <div class="row pt-5 mt-3 px-2 pb-3 w-auto">
@@ -377,13 +430,13 @@
                     <h3>Travel Guide</h3>
                     <p class="pe-3">“The world is a book and those who do not travel read only one page.”</p>
                     <div class="socials mt-5 d-flex justify-content-between w-75">
-                        <img src="./img/index-facebook.png">
-                        <img src="./img/index-instagram.png">
-                        <img src="./img/index-twitter.png">
-                        <img src="./img/index-linkedin.png">
+                        <img src="./img/landing-facebook.png">
+                        <img src="./img/landing-instagram.png">
+                        <img src="./img/landing-twitter.png">
+                        <img src="./img/landing-linkedin.png">
                     </div>
                 </div>
-                <div class="col-lg-3 ps-5">
+                <div class="col-lg-3 ps-5 company">
                     <h4 class="pb-2">Company</h4>
                     <ul class="p-0">
                         <li class="list-unstyled pb-1"><a href="index.html" class="text-decoration-none text-white">Home</a>
@@ -418,18 +471,18 @@
             </div>
             <div class="copyright position-relative w-30 text-center mb-2">
                 <h4>KodedTravels</h4>
-                <img src="./img/index-copyright.png">
+                <img src="./img/landing-copyright.png">
                 <p class="d-inline-block ps-3 m-0">All simple rights reserved 2022</p>
             </div>
         </div>
-        <div class="w-30 position-relative bottom-0 mx-auto d-flex justify-content-between text-white">
+        <div class="w-30 position-relative bottom-0 mx-auto d-flex justify-content-between text-white faq">
             <p>FAQs</p>
-            <p class="border-start border-end px-4">Terms & Conditions</p>
+            <p class="border-start border-end px-4 terms">Terms & Conditions</p>
             <p>Privacy Policy</p>
         </div>
     </footer>
 
     <script src="js/bootstrap.js"></script>
-    <script src="js/faq.js"></script>
+    <script src="js/faq-after.js"></script>
 </body>
 </html>
