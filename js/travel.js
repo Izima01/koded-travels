@@ -31,3 +31,9 @@ function show(){
         }
     }
 }
+
+const noti = document.querySelector(".action")
+
+noti.addEventListener("click", function(){
+    noti.classList.toggle("vieww")
+})

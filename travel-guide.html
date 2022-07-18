@@ -12,7 +12,7 @@
 </head>
 <body>
    <!-- Header Section -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
+   <header class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
     <div class="container-fluid px-5">
         <a class="navbar-brand fw-bold blue fs-3" href="#">Travel<span class="orange">Guide</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -22,32 +22,91 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active text-dark px-4" aria-current="page" href="travel-guide.html">Home</a>
+                    <a class="nav-link active text-dark px-4" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark px-4" href="#">Services</a>
                 </li>
-                
+                <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
                 <li class="nav-item">
-                    <a class="nav-link text-dark px-4">Blog</a>
+                    <a class="nav-link text-dark px-4" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark px-4">About Us</a>
+                    <a class="nav-link text-dark px-4" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark px-4">Contact Us</a>
+                    <a class="nav-link text-dark px-4" href="#">Contact Us</a>
                 </li>
             </ul>
-            <a class="bg-orange px-4 text-white py-2 text-decoration-none rounded-3" type="submit">My account</a>
-            <button class="bg-orange ms-3 rounded-3 border-0"><img src="img/guide bell.png"></button>
+            <!-- <button class="bg-orange p-2 ms-3 rounded-3 border-0"><img src="./img/landing-bell.png"></button> -->
+            <div style="display: inline-grid;" class="pe-2">
+                <a class="bg-orange px-4 text-white py-2 text-decoration-none rounded-3" href="#">My Account</a>
+            </div>
+            <div style="display: inline-grid;" class="action">
+                <div class="bell">
+                    <a class=" bg-orange rounded-3 p-2" href="#">
+                        <img src="img/landing-bell.png" alt="" class="">
+                    </a>
+                </div>
+                <div class="noti">
+                    <h4 class="pt-3 ps-2">Notification</h4>
+                    <div class="all d-flex ps-2">
+                        <div ><a href="#">All</a></div>
+                        <div class="ps-5"><a href="#">Unread</a></div>
+                    </div>
+                    <div class="new d-flex justify-content-between pt-2">
+                        <div class="ps-2"><p>New</p></div>
+                        <div class="pe-2 see"> <a href="#">See all</a></div>
+                    </div>
+                    <div class="book">
+                        <div class="ook">
+                            <div>
+                                <img src="img/noti-1.png" alt="">
+                            </div>
+                            <div>
+                                <p class="fw-bold pp">You just booked  Kenzi as your tour guide in Paris <br> 1h ago <span class="fw-bold">.</span> Travel Guide</p>
+                            </div>
+                        </div>
+                        <div class="ook">
+                            <div>
+                                <img src="img/noti-1.png" alt="">
+                            </div>
+                            <div>
+                                <p class="fw-bold pp">You just booked  Kenzi as your tour guide in Paris <br> 1h ago <span class="fw-bold">.</span> Travel Guide</p>
+                            </div>
+                        </div>
+                        <div class="ook">
+                            <div>
+                                <img src="img/noti-1.png" alt="">
+                            </div>
+                            <div>
+                                <p class="fw-bold pp">You just booked  Kenzi as your tour guide in Paris <br> 1h ago <span class="fw-bold">.</span> Travel Guide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </header>
+</header>
     <section id="actions">
         <div class="container">
             <div class="actions d-flex justify-content-between">
                 <div class="back text-decoration-none ">
-                    <a href="#"><img src="img/guide-back.png" alt=""><span class="ps-3">Back</span></a>
+                    <a href="eiffel-tower.html"><img src="img/guide-back.png" alt=""><span class="ps-3">Back</span></a>
                 </div>
                 <div class="share-save d-flex">
                     <div class="save pe-3">
@@ -426,13 +485,13 @@
                     <h3>Travel Guide</h3>
                     <p class="pe-3">“The world is a book and those who do not travel read only one page.”</p>
                     <div class="socials mt-5 d-flex justify-content-between w-75">
-                        <img src="./img/guide-facebook.png">
-                        <img src="./img/guide-instagram.png">
-                        <img src="./img/guide-twitter.png">
-                        <img src="./img/guide-linkedin.png">
+                        <img src="./img/landing-facebook.png">
+                        <img src="./img/landing-instagram.png">
+                        <img src="./img/landing-twitter.png">
+                        <img src="./img/landing-linkedin.png">
                     </div>
                 </div>
-                <div class="col-lg-3 ps-5">
+                <div class="col-lg-3 ps-5 company">
                     <h4 class="pb-2">Company</h4>
                     <ul class="p-0">
                         <li class="list-unstyled pb-1"><a href="index.html" class="text-decoration-none text-white">Home</a>
@@ -467,13 +526,13 @@
             </div>
             <div class="copyright position-relative w-30 text-center mb-2">
                 <h4>KodedTravels</h4>
-                <img src="./img/guide-copyright.png">
+                <img src="./img/landing-copyright.png">
                 <p class="d-inline-block ps-3 m-0">All simple rights reserved 2022</p>
             </div>
         </div>
-        <div class="w-30 position-relative bottom-0 mx-auto d-flex justify-content-between text-white">
+        <div class="w-30 position-relative bottom-0 mx-auto d-flex justify-content-between text-white faq">
             <p>FAQs</p>
-            <p class="border-start border-end px-4">Terms & Conditions</p>
+            <p class="border-start border-end px-4 terms">Terms & Conditions</p>
             <p>Privacy Policy</p>
         </div>
     </footer>
