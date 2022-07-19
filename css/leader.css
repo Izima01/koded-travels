@@ -13,6 +13,11 @@
     height: 90vh;
 }
 
+a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
 h1 {
     position: absolute;
     left: 443px;
