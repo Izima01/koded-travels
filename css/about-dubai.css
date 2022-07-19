@@ -195,6 +195,17 @@ button {
     font-size: 15px;
 }
 
+<<<<<<< HEAD:css/about-dubai.css
+=======
+.w-80 {
+    width: 80%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+>>>>>>> cd934caeec5c167ea9cbbb11f2edd8af1018f8c6:css/style.css
 .w-60 {
     width: 65%;
 }
